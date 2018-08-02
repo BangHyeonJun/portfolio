@@ -9,7 +9,9 @@ const NavBar = () => {
         <div>
             <AppBar position="static">
                 <Toolbar>
+                    {/* Calling Menu Button */}
                     <MenuList />
+                    {/* writing title on the top */}
                     <Typography variant="title" color="inherit">
                         UmNyaUm's Portfolio Blog
                     </Typography>

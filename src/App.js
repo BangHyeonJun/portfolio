@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import NavBar from "./components/NavBar";
-import TemporaryDrawer from "./components/TemporaryDrawer";
 import "./App.css";
 
 class App extends Component {
     render() {
         return (
             <div>
+                {/* Calling Navigatoin Bar */}
                 <NavBar />
             </div>
         );

@@ -11,24 +11,28 @@ import MailIcon from "@material-ui/icons/Mail";
 
 export const TopListItems = (
     <div>
+        {/* Home Icon */}
         <ListItem button>
             <ListItemIcon>
                 <HomeIcon />
             </ListItemIcon>
             <ListItemText primary="Home" />
         </ListItem>
+        {/* About Icon */}
         <ListItem button>
             <ListItemIcon>
                 <PersonIcon />
             </ListItemIcon>
             <ListItemText primary="About" />
         </ListItem>
+        {/* Project Icon */}
         <ListItem button>
             <ListItemIcon>
                 <NoteIcon />
             </ListItemIcon>
             <ListItemText primary="Project" />
         </ListItem>
+        {/* Contact Icon */}
         <ListItem button>
             <ListItemIcon>
                 <MailIcon />

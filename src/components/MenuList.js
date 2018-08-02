@@ -13,7 +13,7 @@ class MenuList extends Component {
     };
 
     toggleDrawer = value => {
-        alert(value);
+        /* deciding open and close about menu */
         this.setState({
             Menu: value
         });
@@ -25,12 +25,13 @@ class MenuList extends Component {
         const sideList = (
             <div className={TempPropTypes.list}>
                 <List>{TopListItems}</List>
-                {/* <Divider /> <--- 메뉴에 선을 그려줌 */}
+                {/* <Divider /> <--- Drawing menu line */}
                 <List>{BottomListItems}</List>
             </div>
         );
         return (
             <Fragment>
+                {/* Drawing Menu Icon */}
                 <IconButton
                     className={TempPropTypes.menuButton}
                     color="inherit"
@@ -39,6 +40,7 @@ class MenuList extends Component {
                 >
                     <MenuIcon />
                 </IconButton>
+                {/* Drawing Menu */}
                 <Drawer
                     open={this.state.Menu}
                     onClose={() => this.toggleDrawer(false)}
