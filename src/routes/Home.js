@@ -4,7 +4,7 @@ import "routes/Home.css";
 class Home extends Component {
     render() {
         return (
-            <div id="HomeBackGround">
+            <div id="HomeContainer">
                 <aside className="profile-card">
                     <header>
                         {/*<!-- here’s the avatar -->*/}
@@ -35,34 +35,22 @@ class Home extends Component {
                     {/*<!-- some social links to show off -->*/}
                     <ul className="profile-social-links">
                         <li>
-                            <a
-                                target="_blank"
-                                href="http://junprogramer.tistory.com/"
-                            >
+                            <a href="http://junprogramer.tistory.com/">
                                 <i className="fa fa-tumblr" />
                             </a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.facebook.com/jjunprogrammer"
-                            >
+                            <a href="https://www.facebook.com/jjunprogrammer">
                                 <i className="fa fa-facebook" />
                             </a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.instagram.com/jjunijjunijjuni"
-                            >
+                            <a href="https://www.instagram.com/jjunijjunijjuni">
                                 <i className="fa fa-instagram" />
                             </a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://github.com/BangHyeonJun"
-                            >
+                            <a href="https://github.com/BangHyeonJun">
                                 <i className="fa fa-github" />
                             </a>
                         </li>
