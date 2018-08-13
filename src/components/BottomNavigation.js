@@ -8,6 +8,7 @@ import NoteIcon from "@material-ui/icons/Note";
 import PersonIcon from "@material-ui/icons/Person";
 import HomeIcon from "@material-ui/icons/Home";
 import MailIcon from "@material-ui/icons/Mail";
+import "components/BottomNavigation.css";
 
 const styles = {
     root: {
@@ -34,50 +35,50 @@ class SimpleBottomNavigation extends React.Component {
         const { value } = this.state;
 
         return (
-            
-                <BottomNavigation
-                    value={value}
-                    onChange={this.handleChange}
-                    showLabels
-                    className={classes.root}
-                >
-                    <BottomNavigationAction
-                        className={classes.content}
-                        label="Home"
-                        value="Home"
-                        icon={<HomeIcon />}
-                        component={Link}
-                        to="/"
-                        button="true"
-                    />
-                    <BottomNavigationAction
-                        className={classes.content}
-                        label="About"
-                        value="About"
-                        icon={<PersonIcon />}
-                        component={Link}
-                        to="/about"
-                        button="true"
-                    />
-                    <BottomNavigationAction
-                        className={classes.content}
-                        label="Project"
-                        value="Project"
-                        icon={<NoteIcon />}
-                        component={Link}
-                        to="/project"
-                        button="true"
-                    />
-                    <BottomNavigationAction
-                        className={classes.content}
-                        label="Contact"
-                        value="Contact"
-                        icon={<MailIcon />}
-                        component={Link}
-                        to="/contact"
-                        button="true"
-                    />
-                </BottomNavigation>
+            <BottomNavigation
+                id="bottomNav"
+                value={value}
+                onChange={this.handleChange}
+                showLabels
+                className={classes.root}
+            >
+                <BottomNavigationAction
+                    className={classes.content}
+                    label="Home"
+                    value="Home"
+                    icon={<HomeIcon />}
+                    component={Link}
+                    to="/"
+                    button="true"
+                />
+                <BottomNavigationAction
+                    className={classes.content}
+                    label="About"
+                    value="About"
+                    icon={<PersonIcon />}
+                    component={Link}
+                    to="/about"
+                    button="true"
+                />
+                <BottomNavigationAction
+                    className={classes.content}
+                    label="Project"
+                    value="Project"
+                    icon={<NoteIcon />}
+                    component={Link}
+                    to="/project"
+                    button="true"
+                />
+                <BottomNavigationAction
+                    className={classes.content}
+                    label="Contact"
+                    value="Contact"
+                    icon={<MailIcon />}
+                    component={Link}
+                    to="/contact"
+                    button="true"
+                />
+            </BottomNavigation>
         );
     }
 }
