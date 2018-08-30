@@ -53,11 +53,11 @@ class SimpleBottomNavigation extends React.Component {
                 />
                 <BottomNavigationAction
                     className={classes.content}
-                    label="About"
-                    value="About"
+                    label="Resume"
+                    value="Resume"
                     icon={<PersonIcon />}
                     component={Link}
-                    to="/about"
+                    to="/resume"
                     button="true"
                 />
                 <BottomNavigationAction

@@ -4,18 +4,22 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Home from "routes/Home";
-import About from "routes/About";
+import Resume from "routes/Resume";
 import Project from "routes/Project";
 import Contact from "routes/Contact";
 
 class App extends Component {
+    style = {
+        root: {}
+    };
+
     render() {
         return (
             <Router>
                 <Fragment>
                     <NavBar />
                     <Route path="/" exact component={Home} />
-                    <Route path="/about" component={About} />
+                    <Route path="/resume" component={Resume} />
                     <Route path="/project" component={Project} />
                     <Route path="/contact" component={Contact} />
                     <BottomNav />

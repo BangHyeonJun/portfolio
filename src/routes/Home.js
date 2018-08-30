@@ -25,32 +25,45 @@ class Home extends Component {
                     {/*<!-- bit of a bio; who are you? -->*/}
                     <div className="profile-bio">
                         <p>
-                            Hello, Your guys :) <br /> I'm David Bang.
-                            <br /> are you wondering about me? <br />
-                            Then you can click{" "}
-                            <a href="http://localhost:3000/about">here</a>.
+                            커뮤니케이션을 좋아하고
+                            <br />
+                            도전과 경험을 두려워하지 않는
+                            <br />
+                            저의 이름은 <b>방현준</b> 입니다.
                         </p>
                     </div>
 
                     {/*<!-- some social links to show off -->*/}
                     <ul className="profile-social-links">
                         <li>
-                            <a href="http://junprogramer.tistory.com/">
+                            <a
+                                href="http://junprogramer.tistory.com/"
+                                target="_blank"
+                            >
                                 <i className="fa fa-tumblr" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/jjunprogrammer">
+                            <a
+                                href="https://www.facebook.com/jjunprogrammer"
+                                target="_blank"
+                            >
                                 <i className="fa fa-facebook" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/jjunijjunijjuni">
+                            <a
+                                href="https://www.instagram.com/jjunijjunijjuni"
+                                target="_blank"
+                            >
                                 <i className="fa fa-instagram" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/BangHyeonJun">
+                            <a
+                                href="https://github.com/BangHyeonJun"
+                                target="_blank"
+                            >
                                 <i className="fa fa-github" />
                             </a>
                         </li>
