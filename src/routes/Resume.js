@@ -5,7 +5,8 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
 import portfolioImage from "contents/portfolio1.png";
 import resumeImage from "contents/portfolio2.png";
-import resumeFile from "contents/test.txt";
+import resumeFile from "contents/resume.pdf";
+import portfolioFile from "contents/portfolio.pptx";
 
 const styles = theme => ({
     root: {
@@ -88,9 +89,7 @@ const images = [
         width: "50%",
         downloadFunction: function() {
             var path = resumeFile;
-            setTimeout(function() {
-                document.location.href = path;
-            }, 100);
+            window.open(path, "_blank");
         }
     },
     {
@@ -98,7 +97,8 @@ const images = [
         title: "Portfolio",
         width: "50%",
         downloadFunction: function() {
-            alert("b");
+            var path = portfolioFile;
+            window.open(path, "_blank");
         }
     }
 ];

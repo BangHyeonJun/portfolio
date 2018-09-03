@@ -13,8 +13,12 @@ class NavBar extends Component {
                     <AppBar position="static">
                         <Toolbar>
                             {/* writing title on the top */}
-                            <Typography variant="title" color="inherit">
-                                UmNyaUm's Portfolio Blog
+                            <Typography
+                                id="title"
+                                variant="title"
+                                color="inherit"
+                            >
+                                어서오세요! 저의 블로그에
                             </Typography>
                         </Toolbar>
                     </AppBar>

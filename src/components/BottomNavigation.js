@@ -28,7 +28,29 @@ class SimpleBottomNavigation extends React.Component {
 
     handleChange = (event, value) => {
         this.setState({ value });
+
+        // 타이틀을 변경해 주는 곳
+        let TitleID = document.getElementById("title");
+        switch (value) {
+            case "Home":
+                TitleID.innerHTML = "HOME";
+                break;
+            case "Resume":
+                TitleID.innerHTML = "RESUME";
+                break;
+            case "Project":
+                TitleID.innerHTML = "PROJECT";
+                break;
+            case "Contact":
+                TitleID.innerHTML = "CONTACT";
+                break;
+            default:
+                TitleID.innerHTML = "ERROR";
+                break;
+        }
     };
+
+    changeTitle = title => {};
 
     render() {
         const { classes } = this.props;
@@ -59,6 +81,7 @@ class SimpleBottomNavigation extends React.Component {
                     component={Link}
                     to="/resume"
                     button="true"
+                    onClick={this.changeTitle("Resume")}
                 />
                 <BottomNavigationAction
                     className={classes.content}
