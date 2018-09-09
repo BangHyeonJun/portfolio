@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -45,17 +45,14 @@ const styles = theme => ({
         bottom: "0px"
     },
     cardOuterWrap: {
-        display: "table",
         width: "100%",
-        height: "100%",
+        height: "100%"
+    },
+    cardInnerWrap: {
+        textAlign: "center",
         [theme.breakpoints.down("xs")]: {
             paddingBottom: "16%"
         }
-    },
-    cardInnerWrap: {
-        display: "table-cell",
-        verticalAlign: "middle",
-        textAlign: "center"
     }
 });
 

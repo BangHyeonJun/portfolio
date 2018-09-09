@@ -32,6 +32,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <script src="https://use.fontawesome.com/7bcf1ce3ab.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCcjJ-slg_5Wa0T0fM_j11UhawN9bbsUGI",
+      authDomain: "hyeonjunportfolio.firebaseapp.com",
+      databaseURL: "https://hyeonjunportfolio.firebaseio.com",
+      projectId: "hyeonjunportfolio",
+      storageBucket: "hyeonjunportfolio.appspot.com",
+      messagingSenderId: "227749737121"
+    };
+    firebase.initializeApp(config);
+  </script>
 
   <div id="root"></div>
   <!--
@@ -43,6 +56,7 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
+      
     -->
 </body>
 

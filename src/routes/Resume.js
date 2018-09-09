@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import portfolioImage from "contents/portfolio1.png";
 import resumeImage from "contents/portfolio2.png";
 import resumeFile from "contents/resume.pdf";
-import portfolioFile from "contents/portfolio.pptx";
+import portfolioFile from "contents/Portfolio.pdf";
 
 const styles = theme => ({
     root: {
